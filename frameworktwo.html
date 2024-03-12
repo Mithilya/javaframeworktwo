@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaFrameworksTwo/</title>
+    <script defer src="https://cdn.jsdelivr.net/gh/hankhank10.alpine-fetch@main/alpine-fetch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="/styles/screen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+          <li><a href="/" title="Go home">Home</a></li>
+          <li><a href="/about/" title="About the boilerplate">About</a></li>
+          <li><a href="/frameworktwo/" title="Java">JFW2</li>
+        </ul>
+      </nav>
+
+
+<div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
+  <img alt="thumbnail" x-bind:src="thumbImage" />
+</div>
+
+
+</body>
+</html>
